@@ -1,0 +1,326 @@
+Collecting dlib
+  Using cached dlib-19.22.1.tar.gz (7.4 MB)  Preparing metadata (setup.py) ... doneUsing legacy 'setup.py install' for dlib, since package 'wheel' is not installed.Installing collected packages: dlib    Running setup.py install for dlib ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Python310\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\HarouniouS\\AppData\\Local\\Temp\\pip-install-khldfnws\\dlib_682cd0f3568849398e47d9c7e8174a04\\setup.py'"'"'; __file__='"'"'C:\\Users\\HarouniouS\\AppData\\Local\\Temp\\pip-install-khldfnws\\dlib_682cd0f3568849398e47d9c7e8174a04\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\HarouniouS\AppData\Local\Temp\pip-record-9kp1suaq\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Python310\Include\dlib'
+         cwd: C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\
+    Complete output (318 lines):
+    running install
+    running build
+    running build_py
+    package init file 'tools\python\dlib\__init__.py' not found (or not a regular file)
+    running build_ext
+    Building extension for Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+    Invoking CMake setup: 'cmake C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\lib.win-amd64-3.10 -DPYTHON_EXECUTABLE=C:\Python310\python.exe -DCMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE=C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\lib.win-amd64-3.10 -A x64'
+    -- Building for: Visual Studio 16 2019
+    -- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.22523.
+    -- The C compiler identification is MSVC 19.29.30138.0
+    -- The CXX compiler identification is MSVC 19.29.30138.0
+    -- Detecting C compiler ABI info
+    -- Detecting C compiler ABI info - done
+    -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe - skipped
+    -- Detecting C compile features
+    -- Detecting C compile features - done
+    -- Detecting CXX compiler ABI info
+    -- Detecting CXX compiler ABI info - done
+    -- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe - skipped
+    -- Detecting CXX compile features
+    -- Detecting CXX compile features - done
+    -- Found PythonInterp: C:/Python310/python.exe (found version "3.10")
+    -- Found PythonLibs: C:/Python310/libs/Python310.lib
+    -- pybind11 v2.2.4
+    -- Using CMake version: 3.22.1
+    -- Compiling dlib version: 19.22.1
+    -- Looking for sys/types.h
+    -- Looking for sys/types.h - found
+    -- Looking for stdint.h
+    -- Looking for stdint.h - found
+    -- Looking for stddef.h
+    -- Looking for stddef.h - found
+    -- Check size of void*
+    -- Check size of void* - done
+    -- Enabling SSE2 instructions
+    -- Searching for BLAS and LAPACK
+    -- Searching for BLAS and LAPACK
+    -- Looking for pthread.h
+    -- Looking for pthread.h - not found
+    -- Found Threads: TRUE
+    CUDA_TOOLKIT_ROOT_DIR not found or specified
+    -- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (Required is at least version "7.5")
+    -- Found CUDA, but CMake was unable to find the cuBLAS libraries that should be part of every basic CUDA install. Your CUDA install is somehow broken or incomplete. Since cuBLAS is required for dlib to use CUDA we won't use CUDA.
+    -- DID NOT FIND CUDA
+    -- Disabling CUDA support for dlib.  DLIB WILL NOT USE CUDA
+    -- C++11 activated.
+    -- Configuring done
+    -- Generating done
+    -- Build files have been written to: C:/Users/HarouniouS/AppData/Local/Temp/pip-install-khldfnws/dlib_682cd0f3568849398e47d9c7e8174a04/build/temp.win-amd64-3.10/Release
+    Invoking CMake build: 'cmake --build . --config Release -- /m'
+    Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+    Copyright (C) Microsoft Corporation. All rights reserved.
+
+      Checking Build System
+      Building Custom Rule C:/Users/HarouniouS/AppData/Local/Temp/pip-install-khldfnws/dlib_682cd0f3568849398e47d9c7e8174a04/dlib/CMakeLists.txt
+      base64_kernel_1.cpp
+      bigint_kernel_1.cpp
+      bigint_kernel_2.cpp
+      bit_stream_kernel_1.cpp
+      entropy_decoder_kernel_1.cpp
+      entropy_decoder_kernel_2.cpp
+      entropy_encoder_kernel_1.cpp
+      entropy_encoder_kernel_2.cpp
+      md5_kernel_1.cpp
+      tokenizer_kernel_1.cpp
+      unicode.cpp
+      test_for_odr_violations.cpp
+      sockets_kernel_1.cpp
+      bsp.cpp
+      dir_nav_kernel_1.cpp
+      dir_nav_kernel_2.cpp
+      dir_nav_extensions.cpp
+      fonts.cpp
+      linker_kernel_1.cpp
+      extra_logger_headers.cpp
+      logger_kernel_1.cpp
+      logger_config_file.cpp
+      misc_api_kernel_1.cpp
+      misc_api_kernel_2.cpp
+      sockets_extensions.cpp
+      sockets_kernel_2.cpp
+      sockstreambuf.cpp
+      sockstreambuf_unbuffered.cpp
+      server_kernel.cpp
+      server_iostream.cpp
+      server_http.cpp
+      multithreaded_object_extension.cpp
+      threaded_object_extension.cpp
+      threads_kernel_1.cpp
+      threads_kernel_2.cpp
+      threads_kernel_shared.cpp
+      thread_pool_extension.cpp
+      async.cpp
+      timer.cpp
+      stack_trace.cpp
+      cpu_dlib.cpp
+      tensor_tools.cpp
+      image_dataset_metadata.cpp
+      mnist.cpp
+      cifar.cpp
+      global_function_search.cpp
+      kalman_filter.cpp
+      auto.cpp
+      widgets.cpp
+      drawable.cpp
+      canvas_drawing.cpp
+      style.cpp
+      base_widgets.cpp
+      gui_core_kernel_1.cpp
+      gui_core_kernel_2.cpp
+      png_loader.cpp
+      save_png.cpp
+      jpeg_loader.cpp
+      save_jpeg.cpp
+      arm_init.c
+      filter_neon_intrinsics.c
+      png.c
+      pngerror.c
+      pngget.c
+      pngmem.c
+      pngpread.c
+      pngread.c
+      pngrio.c
+      pngrtran.c
+      pngrutil.c
+      pngset.c
+      pngtrans.c
+      pngwio.c
+      pngwrite.c
+      pngwtran.c
+      pngwutil.c
+      adler32.c
+      compress.c
+      crc32.c
+      deflate.c
+      gzclose.c
+      gzlib.c
+      gzread.c
+      gzwrite.c
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzread.c(319,20): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzread.c(400,35): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzread.c(472,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+      infback.c
+      inffast.c
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzwrite.c(212,27): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzwrite.c(232,24): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\zlib\gzwrite.c(371,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+      inflate.c
+      inftrees.c
+      trees.c
+      uncompr.c
+      zutil.c
+      jaricom.c
+      jcapimin.c
+      jcapistd.c
+      jcarith.c
+      jccoefct.c
+      jccolor.c
+      jcdctmgr.c
+      jchuff.c
+      jcinit.c
+      jcmainct.c
+      jcmarker.c
+      jcmaster.c
+      jcomapi.c
+      jcparam.c
+      jcprepct.c
+      jcsample.c
+      jdapimin.c
+      jdapistd.c
+      jdarith.c
+      jdatadst.c
+      jdatasrc.c
+      jdcoefct.c
+      jdcolor.c
+      jddctmgr.c
+      jdhuff.c
+      jdinput.c
+      jdmainct.c
+      jdmarker.c
+      jdmaster.c
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jdatadst.c(185,60): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]    
+      jdmerge.c
+      jdpostct.c
+      jdsample.c
+      jerror.c
+      jfdctflt.c
+      jfdctfst.c
+      jfdctint.c
+      jidctflt.c
+      jidctfst.c
+      jidctint.c
+      jmemmgr.c
+      jmemnobs.c
+      jquant1.c
+      jquant2.c
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jerror.c(193,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jerror.c(195,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+      jutils.c
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(307,53): warning C4267: '+=': conversion from 'size_t' to 'long', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(367,70): warning C4267: '+=': conversion from 'size_t' to 'long', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(977,46): warning C4267: '-=': conversion from 'size_t' to 'long', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(991,46): warning C4267: '-=': conversion from 'size_t' to 'long', possible loss of data [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(1107,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\libjpeg\jmemmgr.c(1110,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\dlib.vcxproj]
+      dlib.vcxproj -> C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\dlib_build\Release\dlib19.22.1_release_64bit_msvc1929.lib
+      Building Custom Rule C:/Users/HarouniouS/AppData/Local/Temp/pip-install-khldfnws/dlib_682cd0f3568849398e47d9c7e8174a04/tools/python/CMakeLists.txt
+      dlib.cpp
+      matrix.cpp
+      vector.cpp
+      svm_c_trainer.cpp
+      svm_rank_trainer.cpp
+      decision_functions.cpp
+      other.cpp
+      basic.cpp
+      cca.cpp
+      sequence_segmenter.cpp
+      svm_struct.cpp
+      image.cpp
+      image2.cpp
+      image3.cpp
+      image4.cpp
+      rectangles.cpp
+      object_detection.cpp
+      shape_predictor.cpp
+      correlation_tracker.cpp
+      face_recognition.cpp
+      cnn_face_detector.cpp
+      global_optimization.cpp
+      image_dataset_metadata.cpp
+      numpy_returns.cpp
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\other.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\other.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_struct.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\face_recognition.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_struct.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_c_trainer.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\face_recognition.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_c_trainer.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\sequence_segmenter.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\cca.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\sequence_segmenter.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\cca.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\rectangles.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\vector.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_rank_trainer.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\rectangles.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\vector.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\svm_rank_trainer.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\matrix.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\matrix.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\dlib.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image4.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\dlib.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image4.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\decision_functions.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\shape_predictor.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\decision_functions.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\shape_predictor.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image2.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image2.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\global_optimization.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image_dataset_metadata.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image_dataset_metadata.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\global_optimization.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\basic.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\basic.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\cnn_face_detector.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\cnn_face_detector.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\correlation_tracker.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\numpy_returns.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\correlation_tracker.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\numpy_returns.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\object_detection.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\object_detection.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image3.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\image3.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+      line.cpp
+      gui.cpp
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\line.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\line.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,22): error C2065: 'ssize_t': undeclared identifier (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\gui.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\dlib\external\pybind11\include\pybind11/numpy.h(35,31): error C2338: ssize_t != Py_intptr_t (compiling source file C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\tools\python\src\gui.cpp) [C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\build\temp.win-amd64-3.10\Release\_dlib_pybind11.vcxproj]
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\setup.py", line 222, in <module>
+        setup(
+      File "C:\Python310\lib\site-packages\setuptools\__init__.py", line 153, in setup
+        return distutils.core.setup(**attrs)
+      File "C:\Python310\lib\distutils\core.py", line 148, in setup
+        dist.run_commands()
+      File "C:\Python310\lib\distutils\dist.py", line 966, in run_commands
+        self.run_command(cmd)
+      File "C:\Python310\lib\distutils\dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "C:\Python310\lib\site-packages\setuptools\command\install.py", line 61, in run
+        return orig.install.run(self)
+      File "C:\Python310\lib\distutils\command\install.py", line 568, in run
+        self.run_command('build')
+      File "C:\Python310\lib\distutils\cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "C:\Python310\lib\distutils\dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "C:\Python310\lib\distutils\command\build.py", line 135, in run
+        self.run_command(cmd_name)
+      File "C:\Python310\lib\distutils\cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "C:\Python310\lib\distutils\dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\setup.py", line 134, in run
+        self.build_extension(ext)
+      File "C:\Users\HarouniouS\AppData\Local\Temp\pip-install-khldfnws\dlib_682cd0f3568849398e47d9c7e8174a04\setup.py", line 174, in build_extension
+        subprocess.check_call(cmake_build, cwd=build_folder)
+      File "C:\Python310\lib\subprocess.py", line 369, in check_call
+        raise CalledProcessError(retcode, cmd)
+    subprocess.CalledProcessError: Command '['cmake', '--build', '.', '--config', 'Release', '--', '/m']' returned non-zero exit status 1.
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Python310\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\HarouniouS\\AppData\\Local\\Temp\\pip-install-khldfnws\\dlib_682cd0f3568849398e47d9c7e8174a04\\setup.py'"'"'; __file__='"'"'C:\\Users\\HarouniouS\\AppData\\Local\\Temp\\pip-install-khldfnws\\dlib_682cd0f3568849398e47d9c7e8174a04\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\HarouniouS\AppData\Local\Temp\pip-record-9kp1suaq\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Python310\Include\dlib' Check the logs for full command output.

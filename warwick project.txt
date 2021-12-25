@@ -1,0 +1,4 @@
+My project is going to be an AI application that detects that face of the car driver so we can decide if the driver
+is sleeping or not. In case he was sleeping an alert must be turned on to wake him up, by that we are reducing the risks
+of accedants and death rate. This application especially specifies the trucks drivers and heavy machines because they work 
+at night more than normal people, taxi drivers or anyone who depends on his income on driving machines or vehicles.
