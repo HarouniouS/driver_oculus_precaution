@@ -52,27 +52,32 @@ video_stram = VideoStream(src=0).start()
 time.sleep(1.0)
 # loop over frames from the video stream
 while True:
+    
+    # after counting 100 frames while the driver's eyes 
+    # are closed the alert gets played to wake them up
     if COUNTER == 100:
         playsound('alert.wav')
+        # and the counter goes to the half to to make the
+        # time shorter for checking if the driver is still sleeping
         COUNTER = 50
-    # if this is a file video stream, then we need to check if
-    # there any more frames left in the buffer to process
 
-    # grab the frame from the threaded video file stream, resize
-    # it, and convert it to grayscale channels for better detection and recognetion
+    # grab the frames , resize them, and convert them to 
+    # grayscale channels for better detection and recognetion
     frame = video_stram.read()
     frame = imutils.resize(frame, width=900)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # detect faces in the grayscale frame
-    rects = detector(gray, 0)
+    faces = detector(gray, 0)
 
-    # loop over the face detections
-    for rect in rects:
+    # loop over all faces which got detected
+    for face in faces:
+
         # determine the facial landmarks for the face region, then
+        shape = predictor(gray, face)
+        
         # convert the facial landmark (x, y)-coordinates to a NumPy
         # array
-        shape = predictor(gray, rect)
         shape = face_utils.shape_to_np(shape)
 
         # extract the left and right eye coordinates, then use the
@@ -86,14 +91,16 @@ while True:
         ear = (leftEyeAspectRatio + rightEyeAspectRatio)
 
         # compute the convex hull for the left and right eye, then
-        # visualize each of the eyes
         leftEyeHull = cv2.convexHull(leftEye)
         rightEyeHull = cv2.convexHull(rightEye)
+
+        # visualize each of the eyes
         cv2.drawContours(frame, [leftEyeHull], -1, (255, 255, 255), 1)
         cv2.drawContours(frame, [rightEyeHull], -1, (255, 255, 255), 1)
 
         # check to see if the eye aspect ratio is below the blink
-        # threshold, and if so, increment the blink frame counter
+        # threshold, and if so, increment the frame counter to
+        # calculate this frame as an eye closed moment
         if ear < EYE_AR_THRESH:
             cv2.putText(frame, "Eye: {}".format("close"), (10, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
@@ -103,7 +110,8 @@ while True:
 
 
         # otherwise, the eye aspect ratio is not below the blink
-        # threshold
+        # threshold we restart the counter because this is a sign
+        # that the driver is awake
         else:
             cv2.putText(frame, "Eye: {}".format("open"), (10, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
@@ -111,17 +119,15 @@ while True:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
             COUNTER = 0
 
-    # draw the total number of blinks on the frame along with
-    # the computed eye aspect ratio for the frame
-
-    # show the frame
+    # show the frame as pop-up output video stream
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
 
-    # if the `q` key was pressed, break from the loop and to quit from the application
+    # if the `q` key was pressed, break from the loop 
+    # and to quit from the application
     if key == ord("q"):
         break
 
-# cleaning up
+# cleaning up the windows we opened
 cv2.destroyAllWindows()
 video_stram.stop()
