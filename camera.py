@@ -55,11 +55,11 @@ while True:
     
     # after counting 100 frames while the driver's eyes 
     # are closed the alert gets played to wake them up
-    if COUNTER == 100:
+    if COUNTER == 80:
         playsound('alert.wav')
         # and the counter goes to the half to to make the
         # time shorter for checking if the driver is still sleeping
-        COUNTER = 50
+        COUNTER = 40
 
     # grab the frames , resize them, and convert them to 
     # grayscale channels for better detection and recognetion
