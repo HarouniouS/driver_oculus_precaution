@@ -1,3 +1,4 @@
+from numpy.core.numeric import False_
 from scipy.spatial import distance as dist
 from imutils.video import FileVideoStream
 from imutils.video import VideoStream
@@ -51,16 +52,16 @@ print("[+] facial landmark predictor loaded successfully ✓")
 video_stram = VideoStream(src=0).start()
 time.sleep(1.0)
 # loop over frames from the video stream
+flag = False
 while True:
-    
     # after counting 100 frames while the driver's eyes 
     # are closed the alert gets played to wake them up
     if COUNTER == 80:
+        flag = True
         playsound('alert.wav')
         # and the counter goes to the half to to make the
         # time shorter for checking if the driver is still sleeping
         COUNTER = 40
-
     # grab the frames , resize them, and convert them to 
     # grayscale channels for better detection and recognetion
     frame = video_stram.read()
@@ -95,17 +96,24 @@ while True:
         rightEyeHull = cv2.convexHull(rightEye)
 
         # visualize each of the eyes
-        cv2.drawContours(frame, [leftEyeHull], -1, (255, 255, 255), 1)
-        cv2.drawContours(frame, [rightEyeHull], -1, (255, 255, 255), 1)
+        cv2.drawContours(frame, [leftEyeHull], -1, (0, 0, 255), 1)
+        cv2.drawContours(frame, [rightEyeHull], -1, (0, 0, 255), 1)
+
+        if flag == True:
+            cv2.putText(frame, "Status: {}".format("Drowzy !!"), (620, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+        else:
+            cv2.putText(frame, "Status: {}".format("All good til now"), (580, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
         # check to see if the eye aspect ratio is below the blink
         # threshold, and if so, increment the frame counter to
         # calculate this frame as an eye closed moment
         if ear < EYE_AR_THRESH:
             cv2.putText(frame, "Eye: {}".format("close"), (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             cv2.putText(frame, "E.A.R.: {:.2f}".format(ear), (300, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             COUNTER = COUNTER + 1
 
 
@@ -114,9 +122,9 @@ while True:
         # that the driver is awake
         else:
             cv2.putText(frame, "Eye: {}".format("open"), (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             cv2.putText(frame, "E.A.R.: {:.2f}".format(ear), (300, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             COUNTER = 0
 
     # show the frame as pop-up output video stream
