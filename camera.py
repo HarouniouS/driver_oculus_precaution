@@ -37,6 +37,7 @@ EYE_AR_CONSEC_FRAMES = 30
 
 # initialize the frame counter to count how much the driver's eyes will be closed
 COUNTER = 0
+COUNTER_TO_RESET_STATUS = 0
 
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor that I got from Google as a dataset to use in this project
@@ -56,12 +57,15 @@ flag = False
 while True:
     # after counting 100 frames while the driver's eyes 
     # are closed the alert gets played to wake them up
-    if COUNTER == 80:
+    if COUNTER == 60:
         flag = True
         playsound('alert.wav')
         # and the counter goes to the half to to make the
         # time shorter for checking if the driver is still sleeping
-        COUNTER = 40
+        COUNTER = 30
+        COUNTER_TO_RESET_STATUS = 0 
+    else:
+        COUNTER_TO_RESET_STATUS = COUNTER_TO_RESET_STATUS + 1
     # grab the frames , resize them, and convert them to 
     # grayscale channels for better detection and recognetion
     frame = video_stram.read()
@@ -100,7 +104,7 @@ while True:
         cv2.drawContours(frame, [rightEyeHull], -1, (0, 0, 255), 1)
 
         if flag == True:
-            cv2.putText(frame, "Status: {}".format("Drowzy !!"), (620, 30),
+            cv2.putText(frame, "Status: {}".format("Drowsy !!"), (620, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         else:
             cv2.putText(frame, "Status: {}".format("All good til now"), (580, 30),
@@ -127,6 +131,9 @@ while True:
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
             COUNTER = 0
 
+        if COUNTER_TO_RESET_STATUS == 800 and flag == True:
+            flag = False
+            COUNTER_TO_RESET_STATUS = 0
     # show the frame as pop-up output video stream
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
